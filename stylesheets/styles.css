@@ -1,0 +1,167 @@
+
+@font-face {
+   font-family: pretty-font;
+   src: url('https://res.cloudinary.com/dsguwnfdw/raw/upload/v1478195629/Gifs/prima_sans.ttf');
+ }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.d-header-row {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-header-left {
+  color: white;
+  width: 185px;
+  height: 45px;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-right: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.d-header-right {
+  color: white;
+  width: 185px;
+  height: 45px;
+  font-size: 16px;
+  padding-top: 20px;
+  margin-left: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.start-display {
+  font-family: pretty-font;
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  position: absolute;
+  bottom: calc(40%);
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.press-space {
+  font-family: pretty-font;
+  color: white;
+  position: absolute;
+  width: 300px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  height: auto;
+  bottom: calc(30px);
+  left: calc(50% - 150px);
+}
+
+.end-display {
+  font-family: pretty-font;
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  position: absolute;
+  bottom: calc(35%);
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.win-display {
+  font-family: pretty-font;
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  position: absolute;
+  bottom: calc(35%);
+  left: calc(50% - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  opacity: 1;
+  font-size: 30px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.header2 {
+  opacity: 1;
+  font-size: 24px;
+  margin-top: 120px;
+  margin-bottom: 25px;
+}
+
+.subheader {
+  opacity: 1;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+.subheader2 {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+
+
+
+.corner-instructions {
+  color: white;
+  font-family: pretty-font;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 5;
+  bottom: 10px;
+  font-size: 14px;
+  right: 10;
+}
+
+#game-canvas {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: block; /* fix necessary to remove space at bottom of canvas */
+  background: #141414 url("../wall.jpg");
+}
+
+.gone {
+  display: none;
+}
+
+.transparent {
+  background: rgba(255, 255, 255, 0.8);
+}
